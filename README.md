@@ -1,7 +1,8 @@
 # Subjects related with master study in Internet Engineering
 
-## List of courses
+## List of semesters:
 
+### Semester 1 courses
 * Social Communication
 * IT applications -Electronic Media in Business and Commerce
 * Computer Project Management 
