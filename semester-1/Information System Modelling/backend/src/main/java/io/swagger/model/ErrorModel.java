@@ -12,7 +12,7 @@ import javax.validation.constraints.*;
  * ErrorModel
  */
 @Validated
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2022-05-12T21:10:43.629Z[GMT]")
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2022-05-15T15:15:53.592Z[GMT]")
 
 
 public class ErrorModel   {

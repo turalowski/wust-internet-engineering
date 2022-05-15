@@ -8,9 +8,8 @@ package io.swagger.api;
 import io.swagger.model.AddUser;
 import java.math.BigDecimal;
 import io.swagger.model.ErrorModel;
-import io.swagger.model.GetUser;
 import io.swagger.model.Item;
-import io.swagger.model.NewItem;
+import io.swagger.model.User;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.enums.ParameterIn;
@@ -19,7 +18,6 @@ import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.media.ArraySchema;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
-import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -37,20 +35,20 @@ import javax.validation.constraints.*;
 import java.util.List;
 import java.util.Map;
 
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2022-05-12T21:10:43.629Z[GMT]")
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2022-05-15T15:15:53.592Z[GMT]")
 @Validated
 public interface UsersApi {
 
     @Operation(summary = "", description = "Creates a new user. Duplicates are not allowed", tags={ "users" })
     @ApiResponses(value = { 
-        @ApiResponse(responseCode = "200", description = "user response", content = @Content(mediaType = "application/json", schema = @Schema(implementation = NewItem.class))),
+        @ApiResponse(responseCode = "200", description = "user response", content = @Content(mediaType = "application/json", schema = @Schema(implementation = User.class))),
         
         @ApiResponse(responseCode = "200", description = "unexpected error", content = @Content(mediaType = "application/json", schema = @Schema(implementation = ErrorModel.class))) })
     @RequestMapping(value = "/users",
         produces = { "application/json" }, 
         consumes = { "application/json" }, 
         method = RequestMethod.POST)
-    ResponseEntity<NewItem> addUser(@Parameter(in = ParameterIn.DEFAULT, description = "Add user", required=true, schema=@Schema()) @Valid @RequestBody AddUser body);
+    ResponseEntity<User> addUser(@Parameter(in = ParameterIn.DEFAULT, description = "Add user", required=true, schema=@Schema()) @Valid @RequestBody AddUser body);
 
 
     @Operation(summary = "", description = "deletes a single user based on the ID supplied", tags={ "users" })
@@ -66,24 +64,24 @@ public interface UsersApi {
 
     @Operation(summary = "", description = "This endpoints are related with the Users model of the application.", tags={ "users" })
     @ApiResponses(value = { 
-        @ApiResponse(responseCode = "200", description = "User response", content = @Content(mediaType = "application/json", schema = @Schema(implementation = GetUser.class))),
+        @ApiResponse(responseCode = "200", description = "User response", content = @Content(mediaType = "application/json", schema = @Schema(implementation = User.class))),
         
         @ApiResponse(responseCode = "200", description = "This is default error response for the endpoint. For different error codes, different error messages will be generated.", content = @Content(mediaType = "application/json", schema = @Schema(implementation = ErrorModel.class))) })
     @RequestMapping(value = "/users/{id}",
         produces = { "application/json" }, 
         method = RequestMethod.GET)
-    ResponseEntity<GetUser> getUser(@Parameter(in = ParameterIn.PATH, description = "ID of user to fetch", required=true, schema=@Schema()) @PathVariable("id") Long id);
+    ResponseEntity<User> getUser(@Parameter(in = ParameterIn.PATH, description = "ID of user to fetch", required=true, schema=@Schema()) @PathVariable("id") Long id);
 
 
     @Operation(summary = "", description = "This endpoint returns all Users from the database.", tags={ "users" })
     @ApiResponses(value = { 
-        @ApiResponse(responseCode = "200", description = "Returns list of users.", content = @Content(mediaType = "application/json", array = @ArraySchema(schema = @Schema(implementation = GetUser.class)))),
+        @ApiResponse(responseCode = "200", description = "Returns list of users.", content = @Content(mediaType = "application/json", array = @ArraySchema(schema = @Schema(implementation = User.class)))),
         
         @ApiResponse(responseCode = "200", description = "This is default error response for the endpoint. For different error codes, different error messages will be generated.", content = @Content(mediaType = "application/json", schema = @Schema(implementation = ErrorModel.class))) })
     @RequestMapping(value = "/users",
         produces = { "application/json" }, 
         method = RequestMethod.GET)
-    ResponseEntity<List<GetUser>> getUsers(@Parameter(in = ParameterIn.QUERY, description = "" ,schema=@Schema()) @Valid @RequestParam(value = "email", required = false) String email, @Parameter(in = ParameterIn.QUERY, description = "" ,schema=@Schema()) @Valid @RequestParam(value = "fullName", required = false) String fullName, @Parameter(in = ParameterIn.QUERY, description = "" ,schema=@Schema()) @Valid @RequestParam(value = "companyName", required = false) String companyName, @Parameter(in = ParameterIn.QUERY, description = "" ,schema=@Schema()) @Valid @RequestParam(value = "employee_count", required = false) BigDecimal employeeCount);
+    ResponseEntity<List<User>> getUsers(@Parameter(in = ParameterIn.QUERY, description = "" ,schema=@Schema()) @Valid @RequestParam(value = "email", required = false) String email, @Parameter(in = ParameterIn.QUERY, description = "" ,schema=@Schema()) @Valid @RequestParam(value = "fullName", required = false) String fullName, @Parameter(in = ParameterIn.QUERY, description = "" ,schema=@Schema()) @Valid @RequestParam(value = "companyName", required = false) String companyName, @Parameter(in = ParameterIn.QUERY, description = "" ,schema=@Schema()) @Valid @RequestParam(value = "employee_count", required = false) BigDecimal employeeCount);
 
 
     @Operation(summary = "", description = "Update user", tags={ "users" })

@@ -1,22 +1,31 @@
 package io.swagger.model;
 
 import java.util.Objects;
-import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonCreator;
 import io.swagger.v3.oas.annotations.media.Schema;
 import java.math.BigDecimal;
 import org.springframework.validation.annotation.Validated;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
 import javax.validation.Valid;
 import javax.validation.constraints.*;
-
+import javax.xml.bind.annotation.XmlRootElement;
+import org.hibernate.jpa.*;
 /**
  * User
  */
 @Validated
-@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2022-05-12T21:10:43.629Z[GMT]")
+@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2022-05-15T15:15:53.592Z[GMT]")
+@XmlRootElement(name = "User")
+@Entity
+@Table(name = "users")
+public class User {
 
-
-public class User   {
   @JsonProperty("email")
   private String email = null;
 
@@ -39,12 +48,13 @@ public class User   {
 
   /**
    * Email of the user
+   * 
    * @return email
    **/
   @Schema(required = true, description = "Email of the user")
-      @NotNull
+  @NotNull
 
-    public String getEmail() {
+  public String getEmail() {
     return email;
   }
 
@@ -59,12 +69,13 @@ public class User   {
 
   /**
    * Full name of the user
+   * 
    * @return fullName
    **/
   @Schema(required = true, description = "Full name of the user")
-      @NotNull
+  @NotNull
 
-    public String getFullName() {
+  public String getFullName() {
     return fullName;
   }
 
@@ -79,12 +90,13 @@ public class User   {
 
   /**
    * Company name of the user
+   * 
    * @return companyName
    **/
   @Schema(required = true, description = "Company name of the user")
-      @NotNull
+  @NotNull
 
-    public String getCompanyName() {
+  public String getCompanyName() {
     return companyName;
   }
 
@@ -99,13 +111,14 @@ public class User   {
 
   /**
    * Employee count of the company
+   * 
    * @return employeeCount
    **/
   @Schema(required = true, description = "Employee count of the company")
-      @NotNull
+  @NotNull
 
-    @Valid
-    public BigDecimal getEmployeeCount() {
+  @Valid
+  public BigDecimal getEmployeeCount() {
     return employeeCount;
   }
 
@@ -120,19 +133,19 @@ public class User   {
 
   /**
    * Get description
+   * 
    * @return description
    **/
   @Schema(required = true, description = "")
-      @NotNull
+  @NotNull
 
-    public String getDescription() {
+  public String getDescription() {
     return description;
   }
 
   public void setDescription(String description) {
     this.description = description;
   }
-
 
   @Override
   public boolean equals(java.lang.Object o) {
@@ -159,7 +172,7 @@ public class User   {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class User {\n");
-    
+
     sb.append("    email: ").append(toIndentedString(email)).append("\n");
     sb.append("    fullName: ").append(toIndentedString(fullName)).append("\n");
     sb.append("    companyName: ").append(toIndentedString(companyName)).append("\n");
