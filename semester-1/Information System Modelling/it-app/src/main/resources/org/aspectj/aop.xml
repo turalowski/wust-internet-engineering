@@ -1,0 +1,20 @@
+<!DOCTYPE aspectj PUBLIC "-//AspectJ//DTD//EN" "http://www.eclipse.org/aspectj/dtd/aspectj.dtd">
+<aspectj>
+
+	<weaver
+		options="-verbose -showWeaveInfo -Xreweavable -Xlint:ignore -Xset:weaveJavaPackages=true,weaveJavaxPackages=true">
+		<!-- <weaver options="-verbose -showWeaveInfo -Xreweavable -Xlint:ignore"> -->
+		<!-- Only weave classes in our application-specific packages. This should 
+			encompass any class that wants to utilize the aspects, and does not need 
+			to encompass the aspects themselves. -->
+		<include within="io.swagger.model.*" />
+		<include within="aspects.*" />
+
+	</weaver>
+
+	<aspects>
+		<!-- declare aspects to the weaver -->
+		<aspect name="aspects.MyAspect" />
+	</aspects>
+
+</aspectj>
