@@ -42,11 +42,6 @@ public class User {
   @JsonProperty("description")
   private String description = null;
 
-  
- 
-
-
-
 
   /**
    * Email of the user

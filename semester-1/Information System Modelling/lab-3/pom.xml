@@ -18,7 +18,7 @@
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.4.0</version>
 	</parent>
-	<repositories></repositories>
+	<repositories>
 		<repository>
 			<id>jitpack.io</id>
 			<url>https://jitpack.io</url>
@@ -51,11 +51,6 @@
 			<artifactId>javassist</artifactId>
 			<version>${javaassist.version}</version>
 		</dependency>
-   <dependency>
-        <groupId>de.invesdwin</groupId>
-        <artifactId>invesdwin-instrument</artifactId>
-        <version>1.0.9</version>
-    </dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -173,22 +168,5 @@
     <artifactId>javassist</artifactId>
     <version>3.25.0-GA</version>
 </dependency>
-<dependency>
-    <groupId>org.aspectj</groupId>
-    <artifactId>aspectjrt</artifactId>
-    <version>1.8.9</version>
-</dependency>
-<dependency>
-    <groupId>org.aspectj</groupId>
-    <artifactId>aspectjweaver</artifactId>
-    <version>1.8.9</version>
-</dependency>
-   <repository>
-        <id>invesdwin</id>
-        <url>https://invesdwin.de/artifactory/invesdwin-oss-remote</url>
-        <releases>
-            <enabled>true</enabled>
-        </releases>
-    </repository>
 	</dependencies>
 </project>

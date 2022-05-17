@@ -81,8 +81,8 @@ public class UsersApiController implements UsersApi {
         String accept = request.getHeader("Accept");
         if (accept != null && accept.contains("application/json")) {
             List<User> users = new ArrayList<User>();
-                users.addAll(userService.findAllUsers());
-                return ResponseEntity.ok(users);
+            users.addAll(userService.findAllUsers());
+            return ResponseEntity.ok(users);
         }
 
         return new ResponseEntity<List<User>>(HttpStatus.NOT_IMPLEMENTED);
