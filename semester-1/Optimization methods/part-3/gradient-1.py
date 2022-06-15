@@ -1,15 +1,14 @@
 # example of plotting a gradient descent search on a one-dimensional function
-from numpy import asarray
-from numpy import arange
-from numpy.random import rand
 from matplotlib import pyplot
 from scipy.misc import derivative
+from numpy import asarray, arange
 # objective function
 def objective(x):
     return 0.5 * (x**4 - 16 * x**2 + 5 * x)
  
 # derivative of objective function
-def objective_derivatgitive(x):
+def objective_derivative(x):
+	print(derivative(objective, x))
 	return derivative(objective, x)
 
 
@@ -40,7 +39,7 @@ bounds = asarray([[-5.0, 5.0]])
 # define the total iterations
 n_iter = 30
 # define the step size
-step_size = 0.25
+step_size = 0.1
 # perform the gradient descent search
 solutions, scores = gradient_descent(objective, objective_derivative, bounds, n_iter, step_size)
 # sample input range uniformly at 0.1 increments

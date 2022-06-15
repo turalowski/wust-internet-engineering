@@ -1,0 +1,37 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://example.org/Product>
+  a rdfs:Class ;
+  rdfs:subClassOf rdfs:Resource .
+
+<http://example.org/Service>
+  a rdfs:Class ;
+  rdfs:subClassOf rdfs:Resource .
+
+<http://example.org/ComputerPart>
+  a rdfs:Class ;
+  rdfs:subClassOf <http://njh.me/#Product> .
+
+<http://example.org/PSU>
+  a rdfs:Class ;
+  rdfs:subClassOf <http://njh.me/#ComputerPart> .
+
+<http://example.org/Motherboard>
+  a rdfs:Class ;
+  rdfs:subClassOf <http://njh.me/#ComputerPart> .
+
+<http://example.org/CPU>
+  a rdfs:Class ;
+  rdfs:subClassOf <http://njh.me/#ComputerPart> .
+
+<http://example.org/Cleaning>
+  a rdfs:Class ;
+  rdfs:subClassOf <http://njh.me/#Service> .
+
+<http://example.org/HouseCleaning>
+  a rdfs:Class ;
+  rdfs:subClassOf <http://njh.me/#Cleaning> .
+
+<http://example.org/CarCleaning>
+  a rdfs:Class ;
+  rdfs:subClassOf <http://njh.me/#Cleaning> .

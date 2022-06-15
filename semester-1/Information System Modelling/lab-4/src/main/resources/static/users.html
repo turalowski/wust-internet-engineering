@@ -1,0 +1,95 @@
+<!doctype html>
+<html ng-app="demo" ng-controller="usersCtrl">
+<head>
+<title>Users Demo AngularJS</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+
+
+
+<div style="display: flex;align-items: flex-start; padding: 20px">
+  <div style="flex: 3">
+<h3 style="margin: 0; padding: 0">Users</h3>
+
+    <table class="w3-table w3-bordered w3-striped">
+      <tr>
+        <th>Full name</th>
+        <th>Email</th>
+        <th>Company name</th>
+        <th>Employee count</th>
+        <th>Description</th>
+        <th>Edit</th>
+        <th>Delete</th>
+      </tr>
+      <tr ng-repeat="user in users">
+       
+        <td>{{ user.fullName }}</td>
+        <td>{{ user.email }}</td>
+        <td>{{ user.companyName }}</td>
+        <td>{{ user.employeeCount }}</td>
+        <td>{{ user.description }}</td>
+        <td>
+          <button class="w3-btn w3-ripple" ng-click="editUser(user)">&#9998; Edit</button>
+        </td>
+        <td>
+          <button class="w3-btn w3-ripple" ng-click="deleteUser(user.id)">&#x2622; Delete</button>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <div style="flex: 1; display: flex; align-items: center; justify-content: center; width: 100%">
+
+    <form ng-hide="edit" style="width: 100%; padding: 20px; align-items: flex-start; display: flex; justify-content: center; flex-direction: column;">
+      <h3 >Create New User:</h3>
+        <label>Full name:</label>
+        <input class="w3-input w3-border" type="text" ng-model="fullName" placeholder="Full name">
+      <br>
+        <label>Email:</label>
+        <input class="w3-input w3-border" type="text" ng-model="email" placeholder="Email">
+        <br>
+        <label>Company name:</label>
+        <input class="w3-input w3-border" type="text" ng-model="companyName" placeholder="Company name">
+        <br>
+        <label>Employee count:</label>
+        <input class="w3-input w3-border" type="text" ng-model="employeeCount" placeholder="Employee count">
+        <br>
+        <label>Description:</label>
+        <input class="w3-input w3-border" type="text" ng-model="description" placeholder="Employee count">
+        <br>
+    <button class="w3-btn w3-purple w3-ripple" ng-click="addUser()" ng-disabled="error || incomplete">&#10004; Save Changes</button>
+    </form>
+    <form ng-show="edit" style="width: 100%; padding: 20px; align-items: flex-start; display: flex; justify-content: center; flex-direction: column;">
+      <h3 >Edit User:</h3>
+        <label>Full name:</label>
+        <input class="w3-input w3-border" type="text" ng-model="fullName" placeholder="Full name">
+      <br>
+        <label>Email:</label>
+        <input class="w3-input w3-border" type="text" ng-model="email" placeholder="Email">
+        <br>
+        <label>Company name:</label>
+        <input class="w3-input w3-border" type="text" ng-model="companyName" placeholder="Company name">
+        <br>
+        <label>Employee count:</label>
+        <input class="w3-input w3-border" type="text" ng-model="employeeCount"  ng-disabled="edit" placeholder="Employee count">
+        <br>
+        <label>Description:</label>
+        <input class="w3-input w3-border" type="text" ng-model="description"  ng-disabled="edit" placeholder="Employee count">
+        <br>
+        <div>
+    <button class="w3-btn w3-purple w3-ripple" ng-click="updateUser()">&#10004; Save Changes</button>
+    <button class="w3-btn w3-blue w3-ripple" ng-click="cancelEdit()">&#10007; Cancel</button>
+        </div>
+    </form>
+  </div>
+</div>
+<br>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="usersDemo.js"></script>
+
+</body>
+</html> 

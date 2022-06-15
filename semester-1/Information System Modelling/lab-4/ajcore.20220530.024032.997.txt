@@ -1,0 +1,229 @@
+---- AspectJ Properties ---
+AspectJ Compiler 1.9.6 built on Tuesday Jul 21, 2020 at 13:30:08 PDT
+---- Dump Properties ---
+Dump file: ajcore.20220530.024032.997.txt
+Dump reason: abort
+Dump on exception: true
+Dump at exit condition: abort
+---- System Properties ---
+java.specification.version=17
+sun.jnu.encoding=UTF-8
+java.class.path=/Users/turalowski/Desktop/projects/university/wo4n_ite_iim/semester-1/Information System Modelling/lab-4/target/classes:/Users/turalowski/.m2/repository/org/javassist/javassist/3.25.0-GA/javassist-3.25.0-GA.jar:/Users/turalowski/.m2/repository/org/springframework/boot/spring-boot-starter-web/2.4.0/spring-boot-starter-web-2.4.0.jar:/Users/turalowski/.m2/repository/org/springframework/boot/spring-boot-starter/2.4.0/spring-boot-starter-2.4.0.jar:/Users/turalowski/.m2/repository/org/springframework/boot/spring-boot/2.4.0/spring-boot-2.4.0.jar:/Users/turalowski/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.4.0/spring-boot-autoconfigure-2.4.0.jar:/Users/turalowski/.m2/repository/org/springframework/boot/spring-boot-starter-logging/2.4.0/spring-boot-starter-logging-2.4.0.jar:/Users/turalowski/.m2/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar:/Users/turalowski/.m2/repository/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar:/Users/turalowski/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.13.3/log4j-to-slf4j-2.13.3.jar:/Users/turalowski/.m2/repository/org/apache/logging/log4j/log4j-api/2.13.3/log4j-api-2.13.3.jar:/Users/turalowski/.m2/repository/org/slf4j/jul-to-slf4j/1.7.30/jul-to-slf4j-1.7.30.jar:/Users/turalowski/.m2/repository/org/yaml/snakeyaml/1.27/snakeyaml-1.27.jar:/Users/turalowski/.m2/repository/org/springframework/boot/spring-boot-starter-json/2.4.0/spring-boot-starter-json-2.4.0.jar:/Users/turalowski/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.11.3/jackson-datatype-jdk8-2.11.3.jar:/Users/turalowski/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.11.3/jackson-datatype-jsr310-2.11.3.jar:/Users/turalowski/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.11.3/jackson-module-parameter-names-2.11.3.jar:/Users/turalowski/.m2/repository/org/springframework/spring-web/5.3.1/spring-web-5.3.1.jar:/Users/turalowski/.m2/repository/org/springframework/spring-webmvc/5.3.1/spring-webmvc-5.3.1.jar:/Users/turalowski/.m2/repository/org/springframework/spring-expression/5.3.1/spring-expression-5.3.1.jar:/Users/turalowski/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/2.4.0/spring-boot-starter-tomcat-2.4.0.jar:/Users/turalowski/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar:/Users/turalowski/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/9.0.39/tomcat-embed-core-9.0.39.jar:/Users/turalowski/.m2/repository/org/glassfish/jakarta.el/3.0.3/jakarta.el-3.0.3.jar:/Users/turalowski/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.39/tomcat-embed-websocket-9.0.39.jar:/Users/turalowski/.m2/repository/io/springfox/springfox-oas/3.0.0/springfox-oas-3.0.0.jar:/Users/turalowski/.m2/repository/io/swagger/core/v3/swagger-annotations/2.1.2/swagger-annotations-2.1.2.jar:/Users/turalowski/.m2/repository/io/swagger/core/v3/swagger-models/2.1.2/swagger-models-2.1.2.jar:/Users/turalowski/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.11.3/jackson-annotations-2.11.3.jar:/Users/turalowski/.m2/repository/io/springfox/springfox-spi/3.0.0/springfox-spi-3.0.0.jar:/Users/turalowski/.m2/repository/io/springfox/springfox-schema/3.0.0/springfox-schema-3.0.0.jar:/Users/turalowski/.m2/repository/io/springfox/springfox-core/3.0.0/springfox-core-3.0.0.jar:/Users/turalowski/.m2/repository/io/springfox/springfox-spring-web/3.0.0/springfox-spring-web-3.0.0.jar:/Users/turalowski/.m2/repository/io/github/classgraph/classgraph/4.8.83/classgraph-4.8.83.jar:/Users/turalowski/.m2/repository/io/springfox/springfox-spring-webmvc/3.0.0/springfox-spring-webmvc-3.0.0.jar:/Users/turalowski/.m2/repository/io/springfox/springfox-spring-webflux/3.0.0/springfox-spring-webflux-3.0.0.jar:/Users/turalowski/.m2/repository/io/springfox/springfox-swagger-common/3.0.0/springfox-swagger-common-3.0.0.jar:/Users/turalowski/.m2/repository/io/swagger/swagger-annotations/1.5.20/swagger-annotations-1.5.20.jar:/Users/turalowski/.m2/repository/io/swagger/swagger-models/1.5.20/swagger-models-1.5.20.jar:/Users/turalowski/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar:/Users/turalowski/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/Users/turalowski/.m2/repository/org/springframework/plugin/spring-plugin-metadata/2.0.0.RELEASE/spring-plugin-metadata-2.0.0.RELEASE.jar:/Users/turalowski/.m2/repository/org/mapstruct/mapstruct/1.3.1.Final/mapstruct-1.3.1.Final.jar:/Users/turalowski/.m2/repository/io/springfox/springfox-swagger-ui/3.0.0/springfox-swagger-ui-3.0.0.jar:/Users/turalowski/.m2/repository/com/github/joschi/jackson/jackson-datatype-threetenbp/2.6.4/jackson-datatype-threetenbp-2.6.4.jar:/Users/turalowski/.m2/repository/org/threeten/threetenbp/1.3.1/threetenbp-1.3.1.jar:/Users/turalowski/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.11.3/jackson-core-2.11.3.jar:/Users/turalowski/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.11.3/jackson-databind-2.11.3.jar:/Users/turalowski/.m2/repository/javax/xml/bind/jaxb-api/2.3.0/jaxb-api-2.3.0.jar:/Users/turalowski/.m2/repository/javax/activation/activation/1.1/activation-1.1.jar:/Users/turalowski/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.3/jaxb-runtime-2.3.3.jar:/Users/turalowski/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/Users/turalowski/.m2/repository/org/glassfish/jaxb/txw2/2.3.3/txw2-2.3.3.jar:/Users/turalowski/.m2/repository/com/sun/istack/istack-commons-runtime/3.0.11/istack-commons-runtime-3.0.11.jar:/Users/turalowski/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/Users/turalowski/.m2/repository/javax/validation/validation-api/2.0.1.Final/validation-api-2.0.1.Final.jar:/Users/turalowski/.m2/repository/org/springframework/plugin/spring-plugin-core/2.0.0.RELEASE/spring-plugin-core-2.0.0.RELEASE.jar:/Users/turalowski/.m2/repository/org/springframework/spring-beans/5.3.1/spring-beans-5.3.1.jar:/Users/turalowski/.m2/repository/org/springframework/spring-context/5.3.1/spring-context-5.3.1.jar:/Users/turalowski/.m2/repository/org/springframework/spring-aop/5.3.1/spring-aop-5.3.1.jar:/Users/turalowski/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/2.4.0/spring-boot-starter-data-jpa-2.4.0.jar:/Users/turalowski/.m2/repository/org/springframework/boot/spring-boot-starter-aop/2.4.0/spring-boot-starter-aop-2.4.0.jar:/Users/turalowski/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/2.4.0/spring-boot-starter-jdbc-2.4.0.jar:/Users/turalowski/.m2/repository/com/zaxxer/HikariCP/3.4.5/HikariCP-3.4.5.jar:/Users/turalowski/.m2/repository/org/springframework/spring-jdbc/5.3.1/spring-jdbc-5.3.1.jar:/Users/turalowski/.m2/repository/jakarta/transaction/jakarta.transaction-api/1.3.3/jakarta.transaction-api-1.3.3.jar:/Users/turalowski/.m2/repository/jakarta/persistence/jakarta.persistence-api/2.2.3/jakarta.persistence-api-2.2.3.jar:/Users/turalowski/.m2/repository/org/springframework/spring-aspects/5.3.1/spring-aspects-5.3.1.jar:/Users/turalowski/.m2/repository/org/springframework/boot/spring-boot-starter-data-rest/2.4.0/spring-boot-starter-data-rest-2.4.0.jar:/Users/turalowski/.m2/repository/org/springframework/data/spring-data-rest-webmvc/3.4.1/spring-data-rest-webmvc-3.4.1.jar:/Users/turalowski/.m2/repository/org/springframework/data/spring-data-rest-core/3.4.1/spring-data-rest-core-3.4.1.jar:/Users/turalowski/.m2/repository/org/springframework/hateoas/spring-hateoas/1.2.1/spring-hateoas-1.2.1.jar:/Users/turalowski/.m2/repository/org/atteo/evo-inflector/1.2.2/evo-inflector-1.2.2.jar:/Users/turalowski/.m2/repository/org/springframework/data/spring-data-jpa/2.4.1/spring-data-jpa-2.4.1.jar:/Users/turalowski/.m2/repository/org/springframework/spring-orm/5.3.1/spring-orm-5.3.1.jar:/Users/turalowski/.m2/repository/org/springframework/spring-tx/5.3.1/spring-tx-5.3.1.jar:/Users/turalowski/.m2/repository/org/springframework/spring-core/5.3.1/spring-core-5.3.1.jar:/Users/turalowski/.m2/repository/org/springframework/spring-jcl/5.3.1/spring-jcl-5.3.1.jar:/Users/turalowski/.m2/repository/org/springframework/data/spring-data-commons/2.4.1/spring-data-commons-2.4.1.jar:/Users/turalowski/.m2/repository/org/hibernate/hibernate-core/5.4.0.Final/hibernate-core-5.4.0.Final.jar:/Users/turalowski/.m2/repository/org/jboss/logging/jboss-logging/3.4.1.Final/jboss-logging-3.4.1.Final.jar:/Users/turalowski/.m2/repository/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar:/Users/turalowski/.m2/repository/net/bytebuddy/byte-buddy/1.10.18/byte-buddy-1.10.18.jar:/Users/turalowski/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/Users/turalowski/.m2/repository/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.1.1.Final/jboss-transaction-api_1.2_spec-1.1.1.Final.jar:/Users/turalowski/.m2/repository/org/jboss/jandex/2.0.5.Final/jandex-2.0.5.Final.jar:/Users/turalowski/.m2/repository/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar:/Users/turalowski/.m2/repository/org/dom4j/dom4j/2.1.1/dom4j-2.1.1.jar:/Users/turalowski/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.1.0.Final/hibernate-commons-annotations-5.1.0.Final.jar:/Users/turalowski/.m2/repository/org/hibernate/hibernate-envers/5.4.0.Final/hibernate-envers-5.4.0.Final.jar:/Users/turalowski/.m2/repository/org/hibernate/hibernate-entitymanager/5.4.0.Final/hibernate-entitymanager-5.4.0.Final.jar:/Users/turalowski/.m2/repository/com/github/gwenn/sqlite-dialect/master/sqlite-dialect-master.jar:/Users/turalowski/.m2/repository/org/xerial/sqlite-jdbc/3.34.0/sqlite-jdbc-3.34.0.jar:/Users/turalowski/.m2/repository/net/sf/ehcache/ehcache/2.10.6/ehcache-2.10.6.jar:/Users/turalowski/.m2/repository/com/jayway/jsonpath/json-path/2.4.0/json-path-2.4.0.jar:/Users/turalowski/.m2/repository/net/minidev/json-smart/2.3/json-smart-2.3.jar:/Users/turalowski/.m2/repository/net/minidev/accessors-smart/1.2/accessors-smart-1.2.jar:/Users/turalowski/.m2/repository/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar:/Users/turalowski/.m2/repository/org/aspectj/aspectjrt/1.9.7/aspectjrt-1.9.7.jar:/Users/turalowski/.m2/repository/org/aspectj/aspectjweaver/1.9.6/aspectjweaver-1.9.6.jar:/Users/turalowski/.m2/repository/org/springframework/spring-instrument/5.3.1/spring-instrument-5.3.1.jar
+com.sun.management.jmxremote.authenticate=false
+java.vm.vendor=Eclipse Adoptium
+sun.arch.data.model=64
+java.vendor.url=https://adoptium.net/
+catalina.useNaming=false
+user.timezone=Europe/Warsaw
+java.vm.specification.version=17
+os.name=Mac OS X
+sun.java.launcher=SUN_STANDARD
+user.country=AZ
+sun.boot.library.path=/Applications/SpringToolSuite4.app/Contents/Eclipse/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.macosx.x86_64_17.0.2.v20220201-1208/jre/lib
+com.sun.management.jmxremote.ssl=false
+spring.application.admin.enabled=true
+sun.java.command=io.swagger.Swagger2SpringBoot --spring.output.ansi.enabled=always
+com.sun.management.jmxremote=
+http.nonProxyHosts=local|*.local|169.254/16|*.169.254/16
+jdk.debug=release
+sun.cpu.endian=little
+spring.boot.project.name=swagger-spring
+user.home=/Users/turalowski
+user.language=en
+java.specification.vendor=Oracle Corporation
+java.version.date=2022-01-18
+java.home=/Applications/SpringToolSuite4.app/Contents/Eclipse/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.macosx.x86_64_17.0.2.v20220201-1208/jre
+file.separator=/
+java.vm.compressedOopsMode=Zero based
+line.separator=
+
+java.vm.specification.vendor=Oracle Corporation
+java.specification.name=Java Platform API Specification
+FILE_LOG_CHARSET=UTF-8
+java.awt.headless=true
+sun.management.compiler=HotSpot 64-Bit Tiered Compilers
+ftp.nonProxyHosts=local|*.local|169.254/16|*.169.254/16
+java.runtime.version=17.0.2+8
+user.name=turalowski
+spring.jmx.enabled=true
+path.separator=:
+os.version=12.3.1
+java.runtime.name=OpenJDK Runtime Environment
+file.encoding=UTF-8
+spring.beaninfo.ignore=true
+java.vm.name=OpenJDK 64-Bit Server VM
+java.vendor.version=Temurin-17.0.2+8
+java.vendor.url.bug=https://github.com/adoptium/adoptium-support/issues
+java.io.tmpdir=/var/folders/xz/q05sb_r16d53mcv6_m1g60b00000gn/T/
+catalina.home=/private/var/folders/xz/q05sb_r16d53mcv6_m1g60b00000gn/T/tomcat.3000.14070967872653790265
+com.zaxxer.hikari.pool_number=1
+com.sun.management.jmxremote.port=49897
+java.version=17.0.2
+user.dir=/Users/turalowski/Desktop/projects/university/wo4n_ite_iim/semester-1/Information System Modelling/lab-4
+os.arch=x86_64
+java.vm.specification.name=Java Virtual Machine Specification
+PID=2631
+CONSOLE_LOG_CHARSET=UTF-8
+catalina.base=/private/var/folders/xz/q05sb_r16d53mcv6_m1g60b00000gn/T/tomcat.3000.14070967872653790265
+native.encoding=UTF-8
+java.library.path=/Users/turalowski/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+java.vm.info=mixed mode, emulated-client
+java.vendor=Eclipse Adoptium
+java.vm.version=17.0.2+8
+java.rmi.server.hostname=localhost
+java.rmi.server.randomIDs=true
+sun.io.unicode.encoding=UnicodeBig
+socksNonProxyHosts=local|*.local|169.254/16|*.169.254/16
+java.class.version=61.0
+---- Command Line ---
+Empty
+---- Full Classpath ---
+Empty
+---- Compiler Messages ---
+info AspectJ Weaver Version 1.9.6 built on Tuesday Jul 21, 2020 at 13:30:08 PDT
+info register classloader jdk.internal.loader.ClassLoaders$AppClassLoader@2aae9190
+info using configuration file:/Users/turalowski/.m2/repository/org/springframework/spring-aspects/5.3.1/spring-aspects-5.3.1.jar!/META-INF/aop.xml
+abort trouble in: 
+class org.springframework.boot.liquibase.LiquibaseChangelogMissingFailureAnalyzer extends org.springframework.boot.diagnostics.AbstractFailureAnalyzer:
+  void <init>():
+                    ALOAD_0     // Lorg/springframework/boot/liquibase/LiquibaseChangelogMissingFailureAnalyzer; this   (line 33)
+                    INVOKESPECIAL org.springframework.boot.diagnostics.AbstractFailureAnalyzer.<init> ()V
+    constructor-execution(void org.springframework.boot.liquibase.LiquibaseChangelogMissingFailureAnalyzer.<init>())
+    |               RETURN
+    constructor-execution(void org.springframework.boot.liquibase.LiquibaseChangelogMissingFailureAnalyzer.<init>())
+  end void <init>()
+
+  protected org.springframework.boot.diagnostics.FailureAnalysis analyze(Throwable, liquibase.exception.ChangeLogParseException):
+                    ALOAD_0     // Lorg/springframework/boot/liquibase/LiquibaseChangelogMissingFailureAnalyzer; this   (line 37)
+                    ALOAD_2     // Lliquibase/exception/ChangeLogParseException; cause
+                    LDC java.io.FileNotFoundException
+                    INVOKEVIRTUAL org.springframework.boot.liquibase.LiquibaseChangelogMissingFailureAnalyzer.findCause (Ljava/lang/Throwable;Ljava/lang/Class;)Ljava/lang/Throwable;
+                    CHECKCAST java.io.FileNotFoundException
+                    ASTORE_3
+                    ALOAD_3     // Ljava/io/FileNotFoundException; fileNotFound   (line 38)
+                    IFNULL L0
+                    ALOAD_0     // Lorg/springframework/boot/liquibase/LiquibaseChangelogMissingFailureAnalyzer; this   (line 39)
+                    ALOAD_2     // Lliquibase/exception/ChangeLogParseException; cause
+                    INVOKESPECIAL org.springframework.boot.liquibase.LiquibaseChangelogMissingFailureAnalyzer.extractChangelogPath (Lliquibase/exception/ChangeLogParseException;)Ljava/lang/String;
+                    ASTORE 4
+                    ALOAD 4     // Ljava/lang/String; changelogPath   (line 40)
+                    INVOKESTATIC org.springframework.util.StringUtils.hasText (Ljava/lang/String;)Z
+                    IFEQ L0
+                    NEW org.springframework.boot.diagnostics.FailureAnalysis   (line 41)
+                    DUP
+                    ALOAD_0     // Lorg/springframework/boot/liquibase/LiquibaseChangelogMissingFailureAnalyzer; this
+                    ALOAD 4     // Ljava/lang/String; changelogPath
+                    INVOKESPECIAL org.springframework.boot.liquibase.LiquibaseChangelogMissingFailureAnalyzer.getDescription (Ljava/lang/String;)Ljava/lang/String;
+                    LDC "Make sure a Liquibase changelog is present at the configured path."
+                    ALOAD_2     // Lliquibase/exception/ChangeLogParseException; cause
+                    INVOKESPECIAL org.springframework.boot.diagnostics.FailureAnalysis.<init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+                    ARETURN
+                L0: ACONST_NULL   (line 45)
+                    ARETURN
+  end protected org.springframework.boot.diagnostics.FailureAnalysis analyze(Throwable, liquibase.exception.ChangeLogParseException)
+
+  private String extractChangelogPath(liquibase.exception.ChangeLogParseException):
+                    ALOAD_1     // Lliquibase/exception/ChangeLogParseException; cause   (line 49)
+                    INVOKEVIRTUAL liquibase.exception.ChangeLogParseException.getMessage ()Ljava/lang/String;
+                    LDC "Error parsing "
+                    INVOKEVIRTUAL java.lang.String.length ()I
+                    INVOKEVIRTUAL java.lang.String.substring (I)Ljava/lang/String;
+                    ARETURN
+  end private String extractChangelogPath(liquibase.exception.ChangeLogParseException)
+
+  private String getDescription(String):
+                    NEW java.lang.StringBuilder   (line 53)
+                    DUP
+                    INVOKESPECIAL java.lang.StringBuilder.<init> ()V
+                    LDC "Liquibase failed to start because no changelog could be found at '"
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    ALOAD_1     // Ljava/lang/String; changelogPath
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    LDC "'."
+                    INVOKEVIRTUAL java.lang.StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+                    INVOKEVIRTUAL java.lang.StringBuilder.toString ()Ljava/lang/String;
+                    ARETURN
+  end private String getDescription(String)
+
+  protected volatile org.springframework.boot.diagnostics.FailureAnalysis analyze(Throwable, Throwable):
+                    ALOAD_0     // Lorg/springframework/boot/liquibase/LiquibaseChangelogMissingFailureAnalyzer; this   (line 33)
+                    ALOAD_1
+                    ALOAD_2
+                    CHECKCAST liquibase.exception.ChangeLogParseException
+                    INVOKEVIRTUAL org.springframework.boot.liquibase.LiquibaseChangelogMissingFailureAnalyzer.analyze (Ljava/lang/Throwable;Lliquibase/exception/ChangeLogParseException;)Lorg/springframework/boot/diagnostics/FailureAnalysis;
+                    ARETURN
+  end protected volatile org.springframework.boot.diagnostics.FailureAnalysis analyze(Throwable, Throwable)
+
+end class org.springframework.boot.liquibase.LiquibaseChangelogMissingFailureAnalyzer
+ -- (IllegalStateException) org.aspectj.weaver.MissingResolvedTypeWithKnownSignature) (typeBindings={T=liquibase.exception.ChangeLogParseException})
+org.aspectj.weaver.MissingResolvedTypeWithKnownSignature) (typeBindings={T=liquibase.exception.ChangeLogParseException})
+java.lang.IllegalStateException: org.aspectj.weaver.MissingResolvedTypeWithKnownSignature) (typeBindings={T=liquibase.exception.ChangeLogParseException})
+	at org.aspectj.weaver.BoundedReferenceType.parameterize(BoundedReferenceType.java:112)
+	at org.aspectj.weaver.ResolvedType.parameterize(ResolvedType.java:2549)
+	at org.aspectj.weaver.ResolvedMemberImpl.parameterize(ResolvedMemberImpl.java:898)
+	at org.aspectj.weaver.ResolvedMemberImpl.parameterizedWith(ResolvedMemberImpl.java:790)
+	at org.aspectj.weaver.ResolvedMemberImpl.parameterizedWith(ResolvedMemberImpl.java:743)
+	at org.aspectj.weaver.ReferenceType.getDeclaredMethods(ReferenceType.java:865)
+	at org.aspectj.weaver.ResolvedType$MethodGetterIncludingItds.get(ResolvedType.java:273)
+	at org.aspectj.weaver.ResolvedType$MethodGetterIncludingItds.get(ResolvedType.java:270)
+	at org.aspectj.weaver.Iterators$4$1.hasNext(Iterators.java:213)
+	at org.aspectj.weaver.Iterators$4.hasNext(Iterators.java:230)
+	at org.aspectj.weaver.ResolvedType.lookupResolvedMember(ResolvedType.java:642)
+	at org.aspectj.weaver.JoinPointSignatureIterator.findSignaturesFromSupertypes(JoinPointSignatureIterator.java:192)
+	at org.aspectj.weaver.JoinPointSignatureIterator.hasNext(JoinPointSignatureIterator.java:68)
+	at org.aspectj.weaver.patterns.SignaturePattern.matches(SignaturePattern.java:320)
+	at org.aspectj.weaver.patterns.KindedPointcut.matchInternal(KindedPointcut.java:202)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.patterns.AndPointcut.matchInternal(AndPointcut.java:56)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.patterns.OrPointcut.matchInternal(OrPointcut.java:60)
+	at org.aspectj.weaver.patterns.Pointcut.match(Pointcut.java:137)
+	at org.aspectj.weaver.ShadowMunger.match(ShadowMunger.java:113)
+	at org.aspectj.weaver.Advice.match(Advice.java:113)
+	at org.aspectj.weaver.bcel.BcelAdvice.match(BcelAdvice.java:161)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.match(BcelClassWeaver.java:3328)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.match(BcelClassWeaver.java:2704)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.weave(BcelClassWeaver.java:483)
+	at org.aspectj.weaver.bcel.BcelClassWeaver.weave(BcelClassWeaver.java:103)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1712)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveWithoutDump(BcelWeaver.java:1656)
+	at org.aspectj.weaver.bcel.BcelWeaver.weaveAndNotify(BcelWeaver.java:1421)
+	at org.aspectj.weaver.bcel.BcelWeaver.weave(BcelWeaver.java:1195)
+	at org.aspectj.weaver.tools.WeavingAdaptor.getWovenBytes(WeavingAdaptor.java:551)
+	at org.aspectj.weaver.tools.WeavingAdaptor.weaveClass(WeavingAdaptor.java:387)
+	at org.aspectj.weaver.loadtime.Aj.preProcess(Aj.java:116)
+	at org.aspectj.weaver.loadtime.ClassPreProcessorAgentAdapter.transform(ClassPreProcessorAgentAdapter.java:51)
+	at org.springframework.context.weaving.AspectJWeavingEnabler$AspectJClassBypassingClassFileTransformer.transform(AspectJWeavingEnabler.java:122)
+	at org.springframework.instrument.classloading.InstrumentationLoadTimeWeaver$FilteringClassFileTransformer.transform(InstrumentationLoadTimeWeaver.java:192)
+	at java.instrument/java.lang.instrument.ClassFileTransformer.transform(ClassFileTransformer.java:244)
+	at java.instrument/sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at java.instrument/sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:541)
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1012)
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:862)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at org.springframework.util.ClassUtils.forName(ClassUtils.java:284)
+	at org.springframework.boot.diagnostics.FailureAnalyzers.createAnalyzer(FailureAnalyzers.java:91)
+	at org.springframework.boot.diagnostics.FailureAnalyzers.loadFailureAnalyzers(FailureAnalyzers.java:77)
+	at org.springframework.boot.diagnostics.FailureAnalyzers.<init>(FailureAnalyzers.java:64)
+	at org.springframework.boot.diagnostics.FailureAnalyzers.<init>(FailureAnalyzers.java:59)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:212)
+	at org.springframework.boot.SpringApplication.createSpringFactoriesInstances(SpringApplication.java:463)
+	at org.springframework.boot.SpringApplication.getSpringFactoriesInstances(SpringApplication.java:449)
+	at org.springframework.boot.SpringApplication.getExceptionReporters(SpringApplication.java:835)
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:821)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:336)
+	at io.swagger.Swagger2SpringBoot.main(Swagger2SpringBoot.java:36)
+

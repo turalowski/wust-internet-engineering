@@ -1,0 +1,49 @@
+<rdf:RDF xml:lang="en" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+
+<rdf:Description ID="Product" rdf:about="http://example.org/Product">
+ <rdf:type resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+ <rdfs:subClassOf
+  rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description ID="Service" rdf:about="http://example.org/Service">
+ <rdf:type resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+ <rdfs:subClassOf
+  rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description ID="ComputerPart" rdf:about="http://example.org/ComputerPart">
+ <rdf:type resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+ <rdfs:subClassOf rdf:resource="#Product"/>
+</rdf:Description>
+
+<rdf:Description ID="PSU" rdf:about="http://example.org/PSU">
+ <rdf:type resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+ <rdfs:subClassOf rdf:resource="#ComputerPart"/>
+</rdf:Description>
+
+<rdf:Description ID="Motherboard" rdf:about="http://example.org/Motherboard">
+ <rdf:type resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+ <rdfs:subClassOf rdf:resource="#ComputerPart"/>
+</rdf:Description>
+
+<rdf:Description ID="CPU" rdf:about="http://example.org/CPU">
+ <rdf:type resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+ <rdfs:subClassOf rdf:resource="#ComputerPart"/>
+</rdf:Description>
+
+<rdf:Description ID="Cleaning" rdf:about="http://example.org/Cleaning">
+ <rdf:type resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+ <rdfs:subClassOf rdf:resource="#Service"/>
+</rdf:Description>
+
+<rdf:Description ID="HouseCleaning" rdf:about="http://example.org/HouseCleaning">
+ <rdf:type resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+ <rdfs:subClassOf rdf:resource="#Cleaning"/>
+</rdf:Description>
+
+<rdf:Description ID="CarCleaning" rdf:about="http://example.org/CarCleaning">
+ <rdf:type resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+ <rdfs:subClassOf rdf:resource="#Cleaning"/>
+</rdf:Description>
+</rdf:RDF>
