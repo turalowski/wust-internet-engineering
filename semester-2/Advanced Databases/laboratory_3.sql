@@ -1,0 +1,1 @@
+Select T.price, S.starting_time from Ticket T JOIN Show S ON T.show_id = S.show_id
